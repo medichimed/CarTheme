@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4r8-tJ-j2M">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--News View-->
+        <scene sceneID="gqc-de-zum">
+            <objects>
+                <viewController storyboardIdentifier="NewsView" id="4r8-tJ-j2M" customClass="NewsView" customModule="CarTheme" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ml2-Jx-vdK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sQW-2c-WtI">
+                                <rect key="frame" x="30" y="30" width="21" height="22"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="line.horizontal.3" catalog="system"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="News" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="47n-XU-EPv">
+                                <rect key="frame" x="71" y="29" width="52.5" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qis-s5-TT0">
+                                <rect key="frame" x="364" y="30" width="20" height="22"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="magnifyingglass" catalog="system"/>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="dbH-g0-RSI">
+                                <rect key="frame" x="20" y="73" width="374" height="33"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uge-2f-j22">
+                                        <rect key="frame" x="0.0" y="0.0" width="59" height="33"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Stories"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bhJ-LY-1Aj">
+                                        <rect key="frame" x="161" y="0.0" width="43" height="33"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Video"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R9O-q0-hiM">
+                                        <rect key="frame" x="297" y="0.0" width="77" height="33"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Favourites">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <slider opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="3" minValue="1" maxValue="9" translatesAutoresizingMaskIntoConstraints="NO" id="i9I-vf-UWC">
+                                <rect key="frame" x="-2" y="106" width="448" height="31"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="minimumTrackTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="maximumTrackTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="thumbTintColor" systemColor="labelColor"/>
+                            </slider>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="43N-Ja-uyv">
+                                <rect key="frame" x="0.0" y="136" width="414" height="726"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qXN-3y-xuq"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Qis-s5-TT0" firstAttribute="centerY" secondItem="47n-XU-EPv" secondAttribute="centerY" id="Jak-q3-ZpA"/>
+                            <constraint firstItem="qXN-3y-xuq" firstAttribute="trailing" secondItem="43N-Ja-uyv" secondAttribute="trailing" id="L90-8n-rgM"/>
+                            <constraint firstItem="dbH-g0-RSI" firstAttribute="top" secondItem="47n-XU-EPv" secondAttribute="bottom" constant="20" id="LGI-vv-biL"/>
+                            <constraint firstItem="qXN-3y-xuq" firstAttribute="trailing" secondItem="dbH-g0-RSI" secondAttribute="trailing" constant="20" id="OMn-pz-IGa"/>
+                            <constraint firstItem="43N-Ja-uyv" firstAttribute="leading" secondItem="qXN-3y-xuq" secondAttribute="leading" id="Sn9-vU-JIc"/>
+                            <constraint firstItem="sQW-2c-WtI" firstAttribute="leading" secondItem="qXN-3y-xuq" secondAttribute="leading" constant="30" id="V79-ho-2l0"/>
+                            <constraint firstItem="i9I-vf-UWC" firstAttribute="leading" secondItem="qXN-3y-xuq" secondAttribute="leading" id="XPk-CM-3xI"/>
+                            <constraint firstItem="qXN-3y-xuq" firstAttribute="trailing" secondItem="i9I-vf-UWC" secondAttribute="trailing" constant="-30" id="Yom-hK-GQ9"/>
+                            <constraint firstItem="sQW-2c-WtI" firstAttribute="top" secondItem="ml2-Jx-vdK" secondAttribute="top" constant="30" id="bFy-F5-rcZ"/>
+                            <constraint firstItem="43N-Ja-uyv" firstAttribute="top" secondItem="i9I-vf-UWC" secondAttribute="bottom" id="cHb-6a-Toy"/>
+                            <constraint firstItem="qXN-3y-xuq" firstAttribute="bottom" secondItem="43N-Ja-uyv" secondAttribute="bottom" id="dOz-cL-hCF"/>
+                            <constraint firstItem="i9I-vf-UWC" firstAttribute="top" secondItem="dbH-g0-RSI" secondAttribute="bottom" id="fIc-WK-ej7"/>
+                            <constraint firstItem="qXN-3y-xuq" firstAttribute="trailing" secondItem="Qis-s5-TT0" secondAttribute="trailing" constant="30" id="gzd-dM-LxV"/>
+                            <constraint firstItem="47n-XU-EPv" firstAttribute="centerY" secondItem="sQW-2c-WtI" secondAttribute="centerY" id="h3R-ef-T6z"/>
+                            <constraint firstItem="47n-XU-EPv" firstAttribute="leading" secondItem="sQW-2c-WtI" secondAttribute="trailing" constant="20" id="pI6-fA-KAq"/>
+                            <constraint firstItem="dbH-g0-RSI" firstAttribute="leading" secondItem="qXN-3y-xuq" secondAttribute="leading" constant="20" id="uaC-K0-kBM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="favouritesButton" destination="R9O-q0-hiM" id="09U-yD-I6A"/>
+                        <outlet property="searchBuntton" destination="Qis-s5-TT0" id="S7G-kk-U0G"/>
+                        <outlet property="slider" destination="i9I-vf-UWC" id="2q6-eT-SCs"/>
+                        <outlet property="storiesButton" destination="uge-2f-j22" id="xIx-kj-CFO"/>
+                        <outlet property="tableView" destination="43N-Ja-uyv" id="k4q-TK-Sa2"/>
+                        <outlet property="videoButton" destination="bhJ-LY-1Aj" id="cem-cD-HwY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sco-Q5-aOm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="226" y="129"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="line.horizontal.3" catalog="system" width="128" height="64"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
